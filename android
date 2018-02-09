@@ -1,0 +1,8 @@
+1.Android O 安装未知应用 这个变成了每个应用单独设置。
+  如果需要应用自己升级，需要在权限列表里加上这个权限 
+  
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+  
+  这样会在设置里看到 “安装应用未知来源” 选项。
+  在应用下载升级后安装，会安装成功，否则会弹出打开 “安装应用未知来源” 这个开关，但是点击开关确打不开的现象。
+  相关文章：https://juejin.im/entry/59a505946fb9a0247e426c57
