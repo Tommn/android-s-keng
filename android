@@ -6,3 +6,8 @@
   这样会在设置里看到 “安装应用未知来源” 选项。
   在应用下载升级后安装，会安装成功，否则会弹出打开 “安装应用未知来源” 这个开关，但是点击开关确打不开的现象。
   相关文章：https://juejin.im/entry/59a505946fb9a0247e426c57
+
+2.使用 EventBus 出现 NoClassDefFoundError 的异常，主要是在低于 android M 的手机上。是因为使用了 
+  public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error)
+  方法，所以在 EventBus 注册的出现异常了，说 WebResourceError 这个找不到，解决办法是在这个方法上加 targetAPi=M
+  参考 http://www.barryzhang.com/archives/435
