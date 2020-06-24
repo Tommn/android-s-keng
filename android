@@ -11,3 +11,6 @@
   public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error)
   方法，所以在 EventBus 注册的出现异常了，说 WebResourceError 这个找不到，解决办法是在这个方法上加 targetAPi=M
   参考 http://www.barryzhang.com/archives/435
+
+3.华为Mate20 Android10 不能调起微信登录，华为支付安全机制导致的（防微信也要防华为）
+https://developers.weixin.qq.com/community/develop/doc/0002ac72d4cd5823376adda7056800?fromCreate=0
