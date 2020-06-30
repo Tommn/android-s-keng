@@ -13,4 +13,10 @@
   参考 http://www.barryzhang.com/archives/435
 
 3.华为Mate20 Android10 不能调起微信登录，华为支付安全机制导致的（防微信也要防华为）
-https://developers.weixin.qq.com/community/develop/doc/0002ac72d4cd5823376adda7056800?fromCreate=0
+  https://developers.weixin.qq.com/community/develop/doc/0002ac72d4cd5823376adda7056800?fromCreate=0
+
+4.调用加 @hide 的 API
+  使用编译的 android.jar ，里面包含 @hide 的 API，替换 AndroidSdk\platforms\android-XX 目录下的 android.jar，记得备份
+  编译好的 android.jar 下载地址 https://github.com/anggrayudi/android-hidden-api
+  上面下载的 android.jar 需要解压一下再用，多套了一层
+  github 太慢 可以试试 https://gitee.com/xixilala-2019/android-hidden-api
